@@ -88,7 +88,7 @@ print(arguments)
 
 batch_size=128
 sequence_length=64
-num_epochs=20
+num_epochs=1
 
 X,Y = generate_single_output_data(arguments.data,batch_size, sequence_length)
 print(Y.shape[1])

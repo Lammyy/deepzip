@@ -3,13 +3,12 @@ data_dir="files_to_be_compressed"
 processed_dir="processed_files"
 
 
-for f in $data_dir
+for f in ${data_dir}/*
 do
     echo "filename: "$f
     s=${f##*/}
     basename=${s%.*}
     echo $basename
-    
     output_file="$processed_dir/$basename.npy"
     param_file="$processed_dir/$basename.param.json"
 

@@ -1,0 +1,1713 @@
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 342, in load_dynamic
+    return _load(spec)
+ImportError: libcudnn.so.7: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "compressor.py", line 20, in <module>
+    import keras
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/utils/__init__.py", line 6, in <module>
+    from . import conv_utils
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/utils/conv_utils.py", line 9, in <module>
+    from .. import backend as K
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/__init__.py", line 89, in <module>
+    from .tensorflow_backend import *
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 5, in <module>
+    import tensorflow as tf
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 74, in <module>
+    raise ImportError(msg)
+ImportError: Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 342, in load_dynamic
+    return _load(spec)
+ImportError: libcudnn.so.7: cannot open shared object file: No such file or directory
+
+
+Failed to load the native TensorFlow runtime.
+
+See https://www.tensorflow.org/install/install_sources#common_installation_problems
+
+for some common reasons and solutions.  Include the entire stack trace
+above this error message when asking for help.
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 0.57
+	System time (seconds): 0.07
+	Percent of CPU this job got: 93%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 72872
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 19808
+	Voluntary context switches: 791
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 342, in load_dynamic
+    return _load(spec)
+ImportError: libcudnn.so.7: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "decompressor.py", line 20, in <module>
+    import keras
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/utils/__init__.py", line 6, in <module>
+    from . import conv_utils
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/utils/conv_utils.py", line 9, in <module>
+    from .. import backend as K
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/__init__.py", line 89, in <module>
+    from .tensorflow_backend import *
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 5, in <module>
+    import tensorflow as tf
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 74, in <module>
+    raise ImportError(msg)
+ImportError: Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 342, in load_dynamic
+    return _load(spec)
+ImportError: libcudnn.so.7: cannot open shared object file: No such file or directory
+
+
+Failed to load the native TensorFlow runtime.
+
+See https://www.tensorflow.org/install/install_sources#common_installation_problems
+
+for some common reasons and solutions.  Include the entire stack trace
+above this error message when asking for help.
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 0.58
+	System time (seconds): 0.05
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 72964
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 19616
+	Voluntary context switches: 790
+	Involuntary context switches: 11
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 342, in load_dynamic
+    return _load(spec)
+ImportError: libcudnn.so.7: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "compressor.py", line 20, in <module>
+    import keras
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/utils/__init__.py", line 6, in <module>
+    from . import conv_utils
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/utils/conv_utils.py", line 9, in <module>
+    from .. import backend as K
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/__init__.py", line 89, in <module>
+    from .tensorflow_backend import *
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 5, in <module>
+    import tensorflow as tf
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 74, in <module>
+    raise ImportError(msg)
+ImportError: Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 342, in load_dynamic
+    return _load(spec)
+ImportError: libcudnn.so.7: cannot open shared object file: No such file or directory
+
+
+Failed to load the native TensorFlow runtime.
+
+See https://www.tensorflow.org/install/install_sources#common_installation_problems
+
+for some common reasons and solutions.  Include the entire stack trace
+above this error message when asking for help.
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 0.60
+	System time (seconds): 0.06
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 72876
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 19778
+	Voluntary context switches: 803
+	Involuntary context switches: 14
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 342, in load_dynamic
+    return _load(spec)
+ImportError: libcudnn.so.7: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "decompressor.py", line 20, in <module>
+    import keras
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/utils/__init__.py", line 6, in <module>
+    from . import conv_utils
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/utils/conv_utils.py", line 9, in <module>
+    from .. import backend as K
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/__init__.py", line 89, in <module>
+    from .tensorflow_backend import *
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 5, in <module>
+    import tensorflow as tf
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 74, in <module>
+    raise ImportError(msg)
+ImportError: Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File "/apps/python/3.6.1/lib/python3.6/imp.py", line 342, in load_dynamic
+    return _load(spec)
+ImportError: libcudnn.so.7: cannot open shared object file: No such file or directory
+
+
+Failed to load the native TensorFlow runtime.
+
+See https://www.tensorflow.org/install/install_sources#common_installation_problems
+
+for some common reasons and solutions.  Include the entire stack trace
+above this error message when asking for help.
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 0.58
+	System time (seconds): 0.08
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 72964
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 19610
+	Voluntary context switches: 790
+	Involuntary context switches: 11
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 68, in predict_lstm
+    model = getattr(models, model_name)(bs, timesteps, alphabet_size)
+  File "/home/lam186/DeepZip/src/models.py", line 25, in biGRU
+    model.add(Bidirectional(CuDNNGRU(32, stateful=False, return_sequences=True)))
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/sequential.py", line 181, in add
+    output_tensor = layer(self.outputs[0])
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/layers/wrappers.py", line 427, in __call__
+    return super(Bidirectional, self).__call__(inputs, **kwargs)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/base_layer.py", line 431, in __call__
+    self.build(unpack_singleton(input_shapes))
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/layers/wrappers.py", line 567, in build
+    self.forward_layer.build(input_shape)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/layers/cudnn_recurrent.py", line 226, in build
+    from tensorflow.contrib.cudnn_rnn.python.ops import cudnn_rnn_ops
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/__init__.py", line 36, in <module>
+    from tensorflow.contrib import distribute
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/distribute/__init__.py", line 22, in <module>
+    from tensorflow.contrib.distribute.python.cross_tower_ops import *
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/distribute/python/cross_tower_ops.py", line 23, in <module>
+    from tensorflow.contrib.distribute.python import cross_tower_utils
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/distribute/python/cross_tower_utils.py", line 23, in <module>
+    from tensorflow.contrib import nccl
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/nccl/__init__.py", line 30, in <module>
+    from tensorflow.contrib.nccl.python.ops.nccl_ops import all_max
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/nccl/python/ops/nccl_ops.py", line 30, in <module>
+    resource_loader.get_path_to_datafile('_nccl_ops.so'))
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/util/loader.py", line 56, in load_op_library
+    ret = load_library.load_op_library(path)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/framework/load_library.py", line 56, in load_op_library
+    lib_handle = py_tf.TF_LoadLibrary(library_filename)
+tensorflow.python.framework.errors_impl.NotFoundError: libnccl.so.2: cannot open shared object file: No such file or directory
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 4.66
+	System time (seconds): 1.29
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1115268
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 294919
+	Voluntary context switches: 4991
+	Involuntary context switches: 113
+	Swaps: 0
+	File system inputs: 173216
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.08
+	System time (seconds): 0.27
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 236748
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62541
+	Voluntary context switches: 4706
+	Involuntary context switches: 84
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 8.13
+	System time (seconds): 1.40
+	Percent of CPU this job got: 91%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1115264
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 22
+	Minor (reclaiming a frame) page faults: 366802
+	Voluntary context switches: 9068
+	Involuntary context switches: 108
+	Swaps: 0
+	File system inputs: 129720
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.03
+	System time (seconds): 0.26
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 236940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63208
+	Voluntary context switches: 4181
+	Involuntary context switches: 82
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 8.15
+	System time (seconds): 1.80
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1115184
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 793630
+	Voluntary context switches: 7392
+	Involuntary context switches: 106
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.06
+	System time (seconds): 0.26
+	Percent of CPU this job got: 93%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 236940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63170
+	Voluntary context switches: 3287
+	Involuntary context switches: 80
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 8.27
+	System time (seconds): 1.73
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1115184
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 791952
+	Voluntary context switches: 7392
+	Involuntary context switches: 111
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.00
+	System time (seconds): 0.27
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 236684
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63164
+	Voluntary context switches: 3279
+	Involuntary context switches: 81
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 8.23
+	System time (seconds): 1.78
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1115184
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 802438
+	Voluntary context switches: 7393
+	Involuntary context switches: 108
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.12
+	System time (seconds): 0.22
+	Percent of CPU this job got: 93%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 236940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63177
+	Voluntary context switches: 3278
+	Involuntary context switches: 83
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 8.10
+	System time (seconds): 1.71
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1115184
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 757546
+	Voluntary context switches: 7412
+	Involuntary context switches: 105
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.01
+	System time (seconds): 0.27
+	Percent of CPU this job got: 91%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 236940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63161
+	Voluntary context switches: 3281
+	Involuntary context switches: 84
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 8.25
+	System time (seconds): 1.67
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1115184
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 798767
+	Voluntary context switches: 7412
+	Involuntary context switches: 109
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 1.99
+	System time (seconds): 0.28
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 236940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63153
+	Voluntary context switches: 3281
+	Involuntary context switches: 85
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 8.20
+	System time (seconds): 2.24
+	Percent of CPU this job got: 93%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1111012
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 35
+	Minor (reclaiming a frame) page faults: 1074329
+	Voluntary context switches: 9377
+	Involuntary context switches: 596
+	Swaps: 0
+	File system inputs: 268168
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.06
+	System time (seconds): 0.25
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 232808
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63232
+	Voluntary context switches: 3536
+	Involuntary context switches: 92
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Starting training ...
+Starting Compression ...
+Starting training ...
+Starting Compression ...
+Starting training ...
+Starting Compression ...
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 7.99
+	System time (seconds): 2.31
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1109664
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1073900
+	Voluntary context switches: 5934
+	Involuntary context switches: 273
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.03
+	System time (seconds): 0.24
+	Percent of CPU this job got: 93%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.43
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 230524
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63188
+	Voluntary context switches: 3993
+	Involuntary context switches: 185
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1157, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 271, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/apps/python/3.6.1/lib/python3.6/site-packages/h5py/_hl/files.py", line 101, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2840)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/tmp/pip-s_7obrrg-build/h5py/_objects.c:2798)
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open (/tmp/pip-s_7obrrg-build/h5py/h5f.c:2117)
+OSError: Unable to open file (Unable to open file: name = '../data/trained_models/files_to_be_compressed/bigru.hdf5', errno = 2, error message = 'no such file or directory', flags = 0, o_flags = 0)
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 8.04
+	System time (seconds): 1.88
+	Percent of CPU this job got: 94%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1114744
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 970625
+	Voluntary context switches: 7902
+	Involuntary context switches: 131
+	Swaps: 0
+	File system inputs: 80
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 1.95
+	System time (seconds): 0.29
+	Percent of CPU this job got: 88%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 236468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63160
+	Voluntary context switches: 3330
+	Involuntary context switches: 90
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+0;0.0165140579485
+1;1.71982662778e-07
+Starting training ...
+Starting Compression ...
+2018-11-27 15:20:14.070767: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_NO_DEVICE
+2018-11-27 15:20:14.070808: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:158] retrieving CUDA diagnostic information for host: b067
+2018-11-27 15:20:14.070815: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:165] hostname: b067
+2018-11-27 15:20:14.070866: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:189] libcuda reported version is: 396.26.0
+2018-11-27 15:20:14.070905: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:193] kernel reported version is: 396.26.0
+2018-11-27 15:20:14.070913: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:300] kernel version seems to match DSO: 396.26.0
+2018-11-27 15:20:14.070945: I tensorflow/core/common_runtime/process_util.cc:63] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1322, in _do_call
+    return fn(*args)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1305, in _run_fn
+    self._extend_graph()
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1340, in _extend_graph
+    tf_session.ExtendSession(self._session)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: No OpKernel was registered to support Op 'CudnnRNN' with these attrs.  Registered devices: [CPU], Registered kernels:
+  device='GPU'; T in [DT_DOUBLE]
+  device='GPU'; T in [DT_FLOAT]
+  device='GPU'; T in [DT_HALF]
+
+	 [[Node: bidirectional_1/CudnnRNN_1 = CudnnRNN[T=DT_FLOAT, direction="unidirectional", dropout=0, input_mode="linear_input", is_training=true, rnn_mode="gru", seed=42, seed2=0](bidirectional_1/transpose_2, bidirectional_1/ExpandDims_3, bidirectional_1/Const_1, bidirectional_1/concat_1)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 69, in predict_lstm
+    model.load_weights(args.model_weights_file)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/network.py", line 1166, in load_weights
+    f, self.layers, reshape=reshape)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/saving.py", line 1058, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 2470, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 199, in get_session
+    [tf.is_variable_initialized(v) for v in candidate_vars])
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 900, in run
+    run_metadata_ptr)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1135, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1316, in _do_run
+    run_metadata)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1335, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: No OpKernel was registered to support Op 'CudnnRNN' with these attrs.  Registered devices: [CPU], Registered kernels:
+  device='GPU'; T in [DT_DOUBLE]
+  device='GPU'; T in [DT_FLOAT]
+  device='GPU'; T in [DT_HALF]
+
+	 [[Node: bidirectional_1/CudnnRNN_1 = CudnnRNN[T=DT_FLOAT, direction="unidirectional", dropout=0, input_mode="linear_input", is_training=true, rnn_mode="gru", seed=42, seed2=0](bidirectional_1/transpose_2, bidirectional_1/ExpandDims_3, bidirectional_1/Const_1, bidirectional_1/concat_1)]]
+
+Caused by op 'bidirectional_1/CudnnRNN_1', defined at:
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 68, in predict_lstm
+    model = getattr(models, model_name)(bs, timesteps, alphabet_size)
+  File "/home/lam186/DeepZip/src/models.py", line 25, in biGRU
+    model.add(Bidirectional(CuDNNGRU(32, stateful=False, return_sequences=True)))
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/sequential.py", line 181, in add
+    output_tensor = layer(self.outputs[0])
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/layers/wrappers.py", line 427, in __call__
+    return super(Bidirectional, self).__call__(inputs, **kwargs)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/base_layer.py", line 457, in __call__
+    output = self.call(inputs, **kwargs)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/layers/wrappers.py", line 523, in call
+    y_rev = self.backward_layer.call(inputs, **kwargs)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/layers/cudnn_recurrent.py", line 90, in call
+    output, states = self._process_batch(inputs, initial_state)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/layers/cudnn_recurrent.py", line 297, in _process_batch
+    is_training=True)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/cudnn_rnn/python/ops/cudnn_rnn_ops.py", line 1623, in __call__
+    seed=self._seed)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/cudnn_rnn/python/ops/cudnn_rnn_ops.py", line 1012, in _cudnn_rnn_no_input_c
+    direction, dropout, seed, name)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/contrib/cudnn_rnn/python/ops/cudnn_rnn_ops.py", line 926, in _cudnn_rnn
+    name=name)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/ops/gen_cudnn_rnn_ops.py", line 115, in cudnn_rnn
+    is_training=is_training, name=name)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "/apps/tensorflow/1.8.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+InvalidArgumentError (see above for traceback): No OpKernel was registered to support Op 'CudnnRNN' with these attrs.  Registered devices: [CPU], Registered kernels:
+  device='GPU'; T in [DT_DOUBLE]
+  device='GPU'; T in [DT_FLOAT]
+  device='GPU'; T in [DT_HALF]
+
+	 [[Node: bidirectional_1/CudnnRNN_1 = CudnnRNN[T=DT_FLOAT, direction="unidirectional", dropout=0, input_mode="linear_input", is_training=true, rnn_mode="gru", seed=42, seed2=0](bidirectional_1/transpose_2, bidirectional_1/ExpandDims_3, bidirectional_1/Const_1, bidirectional_1/concat_1)]]
+
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 7.95
+	System time (seconds): 2.12
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1111016
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1100089
+	Voluntary context switches: 4743
+	Involuntary context switches: 144
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 1.91
+	System time (seconds): 0.29
+	Percent of CPU this job got: 89%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 232740
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63202
+	Voluntary context switches: 3281
+	Involuntary context switches: 86
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+Starting training ...
+Starting Compression ...
+Starting training ...
+0;0.0165140583484
+Starting Compression ...
+2018-11-27 16:29:11.164661: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 360.88MiB
+2018-11-27 16:29:11.410120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.27GiB
+2018-11-27 16:29:11.770111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.27GiB
+2018-11-27 16:29:12.052828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.27GiB
+2018-11-27 16:29:12.052934: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-27 16:29:13.201820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-27 16:29:13.201869: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-27 16:29:13.201877: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-27 16:29:13.201881: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-27 16:29:13.201885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-27 16:29:13.201890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-27 16:29:13.203005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 69 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-27 16:29:13.203406: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 14794 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-27 16:29:13.203644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 14794 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-27 16:29:13.203862: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 14794 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-27 16:29:13.204100: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 28. Tune using inter_op_parallelism_threads for best performance.
+2018-11-27 16:29:25.098798: W tensorflow/core/common_runtime/bfc_allocator.cc:267] Allocator (GPU_0_bfc) ran out of memory trying to allocate 46.88MiB.  Current allocation summary follows.
+2018-11-27 16:29:25.098853: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (256): 	Total Chunks: 14, Chunks in use: 14. 3.5KiB allocated for chunks. 3.5KiB in use in bin. 820B client-requested in use in bin.
+2018-11-27 16:29:25.098861: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (512): 	Total Chunks: 6, Chunks in use: 6. 4.2KiB allocated for chunks. 4.2KiB in use in bin. 4.2KiB client-requested in use in bin.
+2018-11-27 16:29:25.098866: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (1024): 	Total Chunks: 1, Chunks in use: 1. 1.2KiB allocated for chunks. 1.2KiB in use in bin. 1.0KiB client-requested in use in bin.
+2018-11-27 16:29:25.098871: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098876: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098882: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (8192): 	Total Chunks: 10, Chunks in use: 10. 120.0KiB allocated for chunks. 120.0KiB in use in bin. 120.0KiB client-requested in use in bin.
+2018-11-27 16:29:25.098888: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (16384): 	Total Chunks: 5, Chunks in use: 5. 113.5KiB allocated for chunks. 113.5KiB in use in bin. 113.5KiB client-requested in use in bin.
+2018-11-27 16:29:25.098893: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (32768): 	Total Chunks: 3, Chunks in use: 2. 133.2KiB allocated for chunks. 73.5KiB in use in bin. 73.5KiB client-requested in use in bin.
+2018-11-27 16:29:25.098899: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (65536): 	Total Chunks: 2, Chunks in use: 2. 250.0KiB allocated for chunks. 250.0KiB in use in bin. 250.0KiB client-requested in use in bin.
+2018-11-27 16:29:25.098904: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (131072): 	Total Chunks: 1, Chunks in use: 0. 252.0KiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098908: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098912: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (524288): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098916: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098921: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098926: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (4194304): 	Total Chunks: 4, Chunks in use: 4. 28.59MiB allocated for chunks. 28.59MiB in use in bin. 28.59MiB client-requested in use in bin.
+2018-11-27 16:29:25.098930: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098935: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098939: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (33554432): 	Total Chunks: 1, Chunks in use: 0. 40.43MiB allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098944: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098948: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098952: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-27 16:29:25.098959: I tensorflow/core/common_runtime/bfc_allocator.cc:613] Bin for 46.88MiB was 32.00MiB, Chunk State: 
+2018-11-27 16:29:25.098968: I tensorflow/core/common_runtime/bfc_allocator.cc:619]   Size: 40.43MiB | Requested Size: 8.0KiB | in_use: 0, prev:   Size: 5.15MiB | Requested Size: 5.15MiB | in_use: 1
+2018-11-27 16:29:25.098975: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c000000 of size 1280
+2018-11-27 16:29:25.098979: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c000500 of size 12288
+2018-11-27 16:29:25.098982: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c003500 of size 12288
+2018-11-27 16:29:25.098986: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c006500 of size 12288
+2018-11-27 16:29:25.098989: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c009500 of size 768
+2018-11-27 16:29:25.098993: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c009800 of size 256
+2018-11-27 16:29:25.098997: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c009900 of size 256
+2018-11-27 16:29:25.099000: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c009a00 of size 12288
+2018-11-27 16:29:25.099005: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00ca00 of size 256
+2018-11-27 16:29:25.099009: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00cb00 of size 256
+2018-11-27 16:29:25.099012: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00cc00 of size 256
+2018-11-27 16:29:25.099016: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00cd00 of size 256
+2018-11-27 16:29:25.099019: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00ce00 of size 256
+2018-11-27 16:29:25.099022: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00cf00 of size 256
+2018-11-27 16:29:25.099026: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00d000 of size 256
+2018-11-27 16:29:25.099029: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00d100 of size 256
+2018-11-27 16:29:25.099032: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c00d200 of size 12288
+2018-11-27 16:29:25.099036: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c010200 of size 12288
+2018-11-27 16:29:25.099039: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c013200 of size 12288
+2018-11-27 16:29:25.099043: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c016200 of size 12288
+2018-11-27 16:29:25.099046: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c019200 of size 12288
+2018-11-27 16:29:25.099049: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c01c200 of size 768
+2018-11-27 16:29:25.099053: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c01c500 of size 768
+2018-11-27 16:29:25.099056: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c01c800 of size 768
+2018-11-27 16:29:25.099059: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c01cb00 of size 768
+2018-11-27 16:29:25.099063: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c01ce00 of size 24576
+2018-11-27 16:29:25.099067: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c022e00 of size 24576
+2018-11-27 16:29:25.099070: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c028e00 of size 12288
+2018-11-27 16:29:25.099073: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c02be00 of size 256
+2018-11-27 16:29:25.099077: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c02bf00 of size 16384
+2018-11-27 16:29:25.099081: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c02ff00 of size 256
+2018-11-27 16:29:25.099084: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c030000 of size 512
+2018-11-27 16:29:25.099088: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c030200 of size 256
+2018-11-27 16:29:25.099091: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c030300 of size 128000
+2018-11-27 16:29:25.099095: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c04f700 of size 256
+2018-11-27 16:29:25.099099: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Free  at 0x2aac5c04f800 of size 61184
+2018-11-27 16:29:25.099102: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c05e700 of size 37632
+2018-11-27 16:29:25.099106: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c067a00 of size 25344
+2018-11-27 16:29:25.099110: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c06dd00 of size 25344
+2018-11-27 16:29:25.099113: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c074000 of size 37632
+2018-11-27 16:29:25.099117: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c07d300 of size 128000
+2018-11-27 16:29:25.099120: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Free  at 0x2aac5c09c700 of size 258048
+2018-11-27 16:29:25.099124: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c0db700 of size 8192000
+2018-11-27 16:29:25.099128: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5c8ab700 of size 8192000
+2018-11-27 16:29:25.099131: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5d07b700 of size 8192000
+2018-11-27 16:29:25.099135: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x2aac5d84b700 of size 5400576
+2018-11-27 16:29:25.099141: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Free  at 0x2aac5dd71f00 of size 42393856
+2018-11-27 16:29:25.099144: I tensorflow/core/common_runtime/bfc_allocator.cc:638]      Summary of in-use Chunks by size: 
+2018-11-27 16:29:25.099150: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 14 Chunks of size 256 totalling 3.5KiB
+2018-11-27 16:29:25.099156: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 512 totalling 512B
+2018-11-27 16:29:25.099160: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 5 Chunks of size 768 totalling 3.8KiB
+2018-11-27 16:29:25.099164: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 1280 totalling 1.2KiB
+2018-11-27 16:29:25.099168: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 10 Chunks of size 12288 totalling 120.0KiB
+2018-11-27 16:29:25.099172: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 16384 totalling 16.0KiB
+2018-11-27 16:29:25.099177: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 2 Chunks of size 24576 totalling 48.0KiB
+2018-11-27 16:29:25.099182: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 2 Chunks of size 25344 totalling 49.5KiB
+2018-11-27 16:29:25.099187: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 2 Chunks of size 37632 totalling 73.5KiB
+2018-11-27 16:29:25.099192: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 2 Chunks of size 128000 totalling 250.0KiB
+2018-11-27 16:29:25.099196: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 5400576 totalling 5.15MiB
+2018-11-27 16:29:25.099200: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 3 Chunks of size 8192000 totalling 23.44MiB
+2018-11-27 16:29:25.099205: I tensorflow/core/common_runtime/bfc_allocator.cc:645] Sum Total of in-use chunks: 29.14MiB
+2018-11-27 16:29:25.099212: I tensorflow/core/common_runtime/bfc_allocator.cc:647] Stats: 
+Limit:                    73269248
+InUse:                    30556160
+MaxInUse:                 30556160
+NumAllocs:                      89
+MaxAllocSize:              8192000
+
+2018-11-27 16:29:25.099221: W tensorflow/core/common_runtime/bfc_allocator.cc:271] *******************************************_________________________________________________________
+2018-11-27 16:29:25.099240: E tensorflow/stream_executor/cuda/cuda_dnn.cc:82] OOM when allocating tensor with shape[12288000] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+2018-11-27 16:29:25.099265: W tensorflow/core/framework/op_kernel.cc:1273] OP_REQUIRES failed at cudnn_rnn_ops.cc:1221 : Internal: Failed to call ThenRnnForward with model config: [rnn_mode, rnn_input_mode, rnn_direction_mode]: 3, 0, 0 , [num_layers, input_size, num_units, dir_count, seq_length, batch_size]: [1, 32, 32, 1, 64, 1000] 
+2018-11-27 16:29:25.099412: W tensorflow/core/framework/op_kernel.cc:1273] OP_REQUIRES failed at cudnn_rnn_ops.cc:1221 : Internal: Failed to call ThenRnnForward with model config: [rnn_mode, rnn_input_mode, rnn_direction_mode]: 3, 0, 0 , [num_layers, input_size, num_units, dir_count, seq_length, batch_size]: [1, 32, 32, 1, 64, 1000] 
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "compressor.py", line 202, in <module>
+    main()
+  File "compressor.py", line 164, in main
+    predict_lstm(X, Y, Y_original, timesteps, batch_size, alphabet_size, args.model_name)
+  File "compressor.py", line 88, in predict_lstm
+    prob = model.predict(X[ind,:], batch_size=bs)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/training.py", line 1169, in predict
+    steps=steps)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/engine/training_arrays.py", line 294, in predict_loop
+    batch_outs = f(ins_batch)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 2715, in __call__
+    return self._call(inputs)
+  File "/apps/keras/2.2.4-py36/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 2675, in _call
+    fetched = self._callable_fn(*array_vals)
+  File "/apps/tensorflow/1.12.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1439, in __call__
+    run_metadata_ptr)
+  File "/apps/tensorflow/1.12.0-py36-gpu/lib/python3.6/site-packages/tensorflow/python/framework/errors_impl.py", line 528, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.InternalError: Failed to call ThenRnnForward with model config: [rnn_mode, rnn_input_mode, rnn_direction_mode]: 3, 0, 0 , [num_layers, input_size, num_units, dir_count, seq_length, batch_size]: [1, 32, 32, 1, 64, 1000] 
+	 [[{{node bidirectional_1/CudnnRNN}} = CudnnRNN[T=DT_FLOAT, direction="unidirectional", dropout=0, input_mode="linear_input", is_training=true, rnn_mode="gru", seed=42, seed2=0, _device="/job:localhost/replica:0/task:0/device:GPU:0"](bidirectional_1/transpose, bidirectional_2/ExpandDims_1, bidirectional_2/Const, bidirectional_1/concat)]]
+	 [[{{node dense_2/Softmax/_105}} = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_412_dense_2/Softmax", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"]()]]
+Command exited with non-zero status 1
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 12.67
+	System time (seconds): 4.81
+	Percent of CPU this job got: 61%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:28.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3176452
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 1695482
+	Voluntary context switches: 15991
+	Involuntary context switches: 1001
+	Swaps: 0
+	File system inputs: 1720
+	File system outputs: 8016
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 153, in main
+    f = open(args.input_file_prefix+'.combined','rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/files_to_be_compressed/biGRU.compressed.combined'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.61
+	System time (seconds): 0.40
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 249520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 73445
+	Voluntary context switches: 3389
+	Involuntary context switches: 31
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+Starting training ...
+0;0.0165140581741
+1;1.71982662778e-07
+Starting Compression ...
+2018-11-27 17:12:04.164844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-27 17:12:04.391621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-27 17:12:04.627826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-27 17:12:04.870196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-27 17:12:04.870377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-27 17:12:05.937349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-27 17:12:05.937427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-27 17:12:05.937554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-27 17:12:05.937607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-27 17:12:05.937654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-27 17:12:05.937705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-27 17:12:05.938845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15125 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-27 17:12:05.939366: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15125 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-27 17:12:05.939709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15125 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-27 17:12:05.940181: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15125 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-27 17:12:05.940595: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 143.83
+	System time (seconds): 14.38
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:39.09
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3662856
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 716097
+	Voluntary context switches: 150182
+	Involuntary context switches: 10795
+	Swaps: 0
+	File system inputs: 424
+	File system outputs: 8048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-11-27 17:14:40.429368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-27 17:14:40.646251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-27 17:14:40.891842: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-27 17:14:41.134032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-27 17:14:41.134202: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-27 17:14:42.191745: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-27 17:14:42.191825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-27 17:14:42.191954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-27 17:14:42.192005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-27 17:14:42.192058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-27 17:14:42.192110: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-27 17:14:42.193258: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15125 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-27 17:14:42.193785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15125 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-27 17:14:42.194136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15125 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-27 17:14:42.194608: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15125 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-27 17:14:42.195018: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+{'0': 'a', '1': 'b'}
+[0 1 1 0 0 0 1 0 1 1]
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 193.38
+	System time (seconds): 14.27
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:28.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3522008
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 689419
+	Voluntary context switches: 142530
+	Involuntary context switches: 22883
+	Swaps: 0
+	File system inputs: 264
+	File system outputs: 27552
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Starting training ...
+0;0.0165140581845
+1;1.71982662778e-07
+Starting Compression ...
+2018-11-28 14:28:24.993743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-28 14:28:25.218246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-28 14:28:25.473974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-28 14:28:25.730892: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-28 14:28:25.731125: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-28 14:28:26.847991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-28 14:28:26.848176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-28 14:28:26.848227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-28 14:28:26.848282: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-28 14:28:26.848330: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-28 14:28:26.848377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-28 14:28:26.849571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15125 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-28 14:28:26.850171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15125 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-28 14:28:26.850546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15125 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-28 14:28:26.850944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15125 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-28 14:28:26.851409: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+	Command being timed: "python compressor.py -data ../data/processed_files/files_to_be_compressed.npy -data_params ../data/processed_files/files_to_be_compressed.param.json -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -output ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 148.24
+	System time (seconds): 14.31
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:43.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3648628
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 7
+	Minor (reclaiming a frame) page faults: 755717
+	Voluntary context switches: 150824
+	Involuntary context switches: 11650
+	Swaps: 0
+	File system inputs: 13032
+	File system outputs: 8048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-11-28 14:31:05.625671: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-28 14:31:05.851884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-28 14:31:06.101488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-28 14:31:06.362273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-28 14:31:06.362486: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-28 14:31:07.483540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-28 14:31:07.483697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-28 14:31:07.483768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-28 14:31:07.483817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-28 14:31:07.483865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-28 14:31:07.483915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-28 14:31:07.485091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15125 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-28 14:31:07.485610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15125 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-28 14:31:07.485961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15125 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-28 14:31:07.486377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15125 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-28 14:31:07.486821: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+{'0': 'a', '1': 'b'}
+[0 1 1 0 0 0 1 0 1 1]
+	Command being timed: "python decompressor.py -output ../data/compressed/files_to_be_compressed/biGRU.reconstructed.txt -model ../data/trained_models/files_to_be_compressed/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/files_to_be_compressed/biGRU.compressed -batch_size 1000"
+	User time (seconds): 193.28
+	System time (seconds): 13.45
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:27.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3506212
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 724132
+	Voluntary context switches: 142800
+	Involuntary context switches: 22398
+	Swaps: 0
+	File system inputs: 264
+	File system outputs: 27552
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Starting training ...
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+usage: compressor.py [-h] [-model MODEL_WEIGHTS_FILE] [-model_name MODEL_NAME]
+                     [-batch_size BATCH_SIZE] [-data SEQUENCE_NPY_FILE]
+                     [-data_params PARAMS_FILE] [-output OUTPUT_FILE_PREFIX]
+compressor.py: error: unrecognized arguments: ../data/trained_models/Caenorhabditis_elegans.WBcel235.dna.toplevel/biGRU.hdf5 ../data/trained_models/chr1/biGRU.hdf5 ../data/trained_models/files_to_be_compressed/biGRU.hdf5 ../data/trained_models/HMM20/biGRU.hdf5 ../data/trained_models/HMM30/biGRU.hdf5 ../data/trained_models/HMM40/biGRU.hdf5 ../data/trained_models/iid_p10.1/biGRU.hdf5 ../data/trained_models/PhiX_quality_truncated/biGRU.hdf5 ../data/trained_models/text8/biGRU.hdf5 ../data/trained_models/xor20/biGRU.hdf5 ../data/trained_models/xor30/biGRU.hdf5 ../data/trained_models/xor40/biGRU.hdf5 ../data/trained_models/xor50/biGRU.hdf5 ../data/trained_models/xor60/biGRU.hdf5
+Command exited with non-zero status 2
+	Command being timed: "python compressor.py -data ../data/processed_files/*.npy -data_params ../data/processed_files/*.param.json -model ../data/trained_models/Caenorhabditis_elegans.WBcel235.dna.chromosome.I/biGRU.hdf5 ../data/trained_models/Caenorhabditis_elegans.WBcel235.dna.toplevel/biGRU.hdf5 ../data/trained_models/chr1/biGRU.hdf5 ../data/trained_models/files_to_be_compressed/biGRU.hdf5 ../data/trained_models/HMM20/biGRU.hdf5 ../data/trained_models/HMM30/biGRU.hdf5 ../data/trained_models/HMM40/biGRU.hdf5 ../data/trained_models/iid_p10.1/biGRU.hdf5 ../data/trained_models/PhiX_quality_truncated/biGRU.hdf5 ../data/trained_models/text8/biGRU.hdf5 ../data/trained_models/xor20/biGRU.hdf5 ../data/trained_models/xor30/biGRU.hdf5 ../data/trained_models/xor40/biGRU.hdf5 ../data/trained_models/xor50/biGRU.hdf5 ../data/trained_models/xor60/biGRU.hdf5 -model_name biGRU -output ../data/compressed/*/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.16
+	System time (seconds): 0.31
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 248392
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 72829
+	Voluntary context switches: 3360
+	Involuntary context switches: 89
+	Swaps: 0
+	File system inputs: 192
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 2

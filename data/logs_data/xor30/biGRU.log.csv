@@ -162,3 +162,288 @@ Using TensorFlow backend.
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 0
+Starting training ...
+Starting Compression ...
+Using TensorFlow backend.
+usage: compressor.py [-h] [-model MODEL_WEIGHTS_FILE] [-model_name MODEL_NAME]
+                     [-batch_size BATCH_SIZE] [-data SEQUENCE_NPY_FILE]
+                     [-data_params PARAMS_FILE] [-output OUTPUT_FILE_PREFIX]
+compressor.py: error: unrecognized arguments: ../data/trained_models/Caenorhabditis_elegans.WBcel235.dna.toplevel/biGRU.hdf5 ../data/trained_models/chr1/biGRU.hdf5 ../data/trained_models/files_to_be_compressed/biGRU.hdf5 ../data/trained_models/HMM20/biGRU.hdf5 ../data/trained_models/HMM30/biGRU.hdf5 ../data/trained_models/HMM40/biGRU.hdf5 ../data/trained_models/iid_p10.1/biGRU.hdf5 ../data/trained_models/PhiX_quality_truncated/biGRU.hdf5 ../data/trained_models/text8/biGRU.hdf5 ../data/trained_models/xor20/biGRU.hdf5 ../data/trained_models/xor30/biGRU.hdf5 ../data/trained_models/xor40/biGRU.hdf5 ../data/trained_models/xor50/biGRU.hdf5 ../data/trained_models/xor60/biGRU.hdf5
+Command exited with non-zero status 2
+	Command being timed: "python compressor.py -data ../data/processed_files/*.npy -data_params ../data/processed_files/*.param.json -model ../data/trained_models/Caenorhabditis_elegans.WBcel235.dna.chromosome.I/biGRU.hdf5 ../data/trained_models/Caenorhabditis_elegans.WBcel235.dna.toplevel/biGRU.hdf5 ../data/trained_models/chr1/biGRU.hdf5 ../data/trained_models/files_to_be_compressed/biGRU.hdf5 ../data/trained_models/HMM20/biGRU.hdf5 ../data/trained_models/HMM30/biGRU.hdf5 ../data/trained_models/HMM40/biGRU.hdf5 ../data/trained_models/iid_p10.1/biGRU.hdf5 ../data/trained_models/PhiX_quality_truncated/biGRU.hdf5 ../data/trained_models/text8/biGRU.hdf5 ../data/trained_models/xor20/biGRU.hdf5 ../data/trained_models/xor30/biGRU.hdf5 ../data/trained_models/xor40/biGRU.hdf5 ../data/trained_models/xor50/biGRU.hdf5 ../data/trained_models/xor60/biGRU.hdf5 -model_name biGRU -output ../data/compressed/*/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.16
+	System time (seconds): 0.31
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 248392
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 72829
+	Voluntary context switches: 3360
+	Involuntary context switches: 89
+	Swaps: 0
+	File system inputs: 192
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 2
+Starting training ...
+0;0.00290387331727
+1;1.71982662778e-07
+Starting Compression ...
+2018-11-30 10:56:15.367000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 10:56:15.588134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 10:56:15.835912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 10:56:16.105038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 10:56:16.105276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-30 10:56:17.200073: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-30 10:56:17.200142: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-30 10:56:17.200237: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-30 10:56:17.200305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-30 10:56:17.200353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-30 10:56:17.200401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-30 10:56:17.201576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15125 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-30 10:56:17.202124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15125 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-30 10:56:17.202488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15125 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-30 10:56:17.202982: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15125 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-30 10:56:17.203437: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+	Command being timed: "python compressor.py -data ../data/processed_files/xor30.npy -data_params ../data/processed_files/xor30.param.json -model ../data/trained_models/xor30/biGRU.hdf5 -model_name biGRU -output ../data/compressed/xor30/biGRU.compressed -batch_size 1000"
+	User time (seconds): 142.86
+	System time (seconds): 14.36
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:37.98
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3658364
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 746831
+	Voluntary context switches: 151014
+	Involuntary context switches: 14075
+	Swaps: 0
+	File system inputs: 240
+	File system outputs: 8048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-11-30 10:58:50.658078: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 10:58:50.881865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 10:58:51.127974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 10:58:51.381165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 10:58:51.381367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-30 10:58:52.486870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-30 10:58:52.486945: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-30 10:58:52.487056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-30 10:58:52.487108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-30 10:58:52.487156: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-30 10:58:52.487205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-30 10:58:52.488367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15125 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-30 10:58:52.488976: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15125 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-30 10:58:52.489435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15125 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-30 10:58:52.489896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15125 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-30 10:58:52.490344: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+{'0': 'a', '1': 'b'}
+[1 1 0 0 0 1 0 0 0 1]
+	Command being timed: "python decompressor.py -output ../data/compressed/xor30/biGRU.reconstructed.txt -model ../data/trained_models/xor30/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/xor30/biGRU.compressed -batch_size 1000"
+	User time (seconds): 188.05
+	System time (seconds): 13.50
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:22.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3517004
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 700415
+	Voluntary context switches: 142721
+	Involuntary context switches: 22031
+	Swaps: 0
+	File system inputs: 240
+	File system outputs: 27552
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Starting training ...
+0;0.00290387338307
+1;1.71982662778e-07
+Starting Compression ...
+2018-11-30 11:49:21.509854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 11:49:21.733565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 11:49:21.984296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 11:49:22.237008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 11:49:22.237230: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-30 11:49:23.336953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-30 11:49:23.337105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-30 11:49:23.337207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-30 11:49:23.337260: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-30 11:49:23.337307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-30 11:49:23.337356: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-30 11:49:23.338533: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15125 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-30 11:49:23.339011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15125 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-30 11:49:23.339346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15125 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-30 11:49:23.339788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15125 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-30 11:49:23.340190: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+	Command being timed: "python compressor.py -data ../data/processed_files/xor30.npy -data_params ../data/processed_files/xor30.param.json -model ../data/trained_models/xor30/biGRU.hdf5 -model_name biGRU -output ../data/compressed/xor30/biGRU.compressed -batch_size 1000"
+	User time (seconds): 142.83
+	System time (seconds): 14.44
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:38.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3660332
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 715610
+	Voluntary context switches: 151053
+	Involuntary context switches: 14621
+	Swaps: 0
+	File system inputs: 240
+	File system outputs: 8048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-11-30 11:51:56.520785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:04:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 11:51:56.745166: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:06:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 11:51:56.996101: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:07:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 11:51:57.248903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: Tesla P100-SXM2-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.4805
+pciBusID: 0000:08:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2018-11-30 11:51:57.249107: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3
+2018-11-30 11:51:58.362760: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-30 11:51:58.362836: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 
+2018-11-30 11:51:58.362938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y Y Y 
+2018-11-30 11:51:58.363004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N Y Y 
+2018-11-30 11:51:58.363053: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   Y Y N Y 
+2018-11-30 11:51:58.363107: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   Y Y Y N 
+2018-11-30 11:51:58.364265: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15125 MB memory) -> physical GPU (device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:04:00.0, compute capability: 6.0)
+2018-11-30 11:51:58.364812: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15125 MB memory) -> physical GPU (device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0)
+2018-11-30 11:51:58.365217: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15125 MB memory) -> physical GPU (device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 6.0)
+2018-11-30 11:51:58.365721: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15125 MB memory) -> physical GPU (device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:08:00.0, compute capability: 6.0)
+2018-11-30 11:51:58.366169: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+{'0': 'a', '1': 'b'}
+[1 1 0 0 0 1 0 0 0 1]
+	Command being timed: "python decompressor.py -output ../data/compressed/xor30/biGRU.reconstructed.txt -model ../data/trained_models/xor30/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/xor30/biGRU.compressed -batch_size 1000"
+	User time (seconds): 188.40
+	System time (seconds): 14.19
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:23.37
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3520428
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 684672
+	Voluntary context switches: 143220
+	Involuntary context switches: 22105
+	Swaps: 0
+	File system inputs: 240
+	File system outputs: 27552
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Starting training ...
+Starting Compression ...
+./run_experiments.sh: line 56: ../data/trained_models/xor30/biGRU.hdf5: Permission denied
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "decompressor.py", line 184, in <module>
+    main()
+  File "decompressor.py", line 145, in main
+    f = open(args.input_file_prefix+'.params','r')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/compressed/xor30/biGRU.compressed.params'
+Command exited with non-zero status 1
+	Command being timed: "python decompressor.py -output ../data/compressed/xor30/biGRU.reconstructed.txt -model ../data/trained_models/xor30/biGRU.hdf5 -model_name biGRU -input_file_prefix ../data/compressed/xor30/biGRU.compressed -batch_size 1000"
+	User time (seconds): 2.18
+	System time (seconds): 0.28
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 248964
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 73901
+	Voluntary context switches: 3335
+	Involuntary context switches: 97
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
